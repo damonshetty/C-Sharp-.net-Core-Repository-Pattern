@@ -16,9 +16,11 @@ namespace C_Sharp_.net_Core_Repository_Pattern
         {
             CreateWebHostBuilder(args).Build().Run();
         }
-
+        
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
     }
+
+
 }
